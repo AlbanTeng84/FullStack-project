@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <p>{{ dataRetrive }}</p>
     <p>{{ username }}</p>
@@ -24,28 +24,33 @@ export default {
   data() {
     return{
         dataRetrive: '',
-        posts:{
-          username: '',
-          password: '',
-      },
+       
     }
   },
 
   methods:{
-    userSubmit(e){
-      this.axios.posts('http://127.0.0.1:5000/posts', this.posts)
-        .then(result =>{
-          console.log(result.data)
-        })
-      e.preventDefault()
+    // userSubmit(e){
+    //   this.axios.posts('http://127.0.0.1:5000/posts', this.posts)
+    //     .then(result =>{
+    //       console.log(result.data)
+    //     })
+    //   e.preventDefault()
+
+    // },
+    userGet(){
+      axios.get('http://127.0.0.1:5000/jobs')
+      .then(res => {
+        console.log(res)
+      
+      })
     }
+   
   },
   mounted(){
-    axios.get('http://127.0.0.1:5000/jobs')
-      .then(res => {
-        this.dataRetrive = res.data
-      })
+    this.userGet()
+
   }
+    
 }
 </script>
 
@@ -71,4 +76,4 @@ export default {
     padding:10px;
     border-radius: 4px;
   }
-</style>
+</style> -->

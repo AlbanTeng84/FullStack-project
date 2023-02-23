@@ -1,7 +1,8 @@
 <template>
   <nav>
-    <router-link :to="{ name:'Jobs'}">Jobs</router-link>
-    <router-link :to="{name:'PostData'}" >PostData</router-link>
+    <!-- <router-link :to="{ name:'Jobs'}">Jobs</router-link>
+    <router-link :to="{name:'PostData'}">PostData</router-link> -->
+    <router-link :to="{name:'Get'}">GetData</router-link>
   </nav>
   <router-view/>
   

@@ -1,19 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Jobs from '../components/Jobs.vue'
-import PostData from '../components/PostData.vue'
+// import Jobs from '../components/Jobs.vue';
+// import PostData from '../components/PostData.vue';
+import Get from '..components/Get.vue';
 
 
 const routes = [ 
+  // {
+  //   path: '/jobs',
+  //   name: 'Jobs',
+  //   component: Jobs,
+  // },
+  // {
+  //   path: '/postdata',
+  //   name: 'PostData',
+  //   component: PostData,
+  // },
   {
-    path: '/jobs',
-    name: 'Jobs',
-    component: Jobs,
+    path: '/get',
+    name: 'Get',
+    component: Get,
   },
-  {
-    path: '/postdata',
-    name: 'PostData',
-    component: PostData,
-  },
+
 ];
 
 const router = createRouter({
